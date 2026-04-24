@@ -8,3 +8,5 @@ access_school_attendance_line,school.attendance.line,model_school_attendance_lin
 access_school_exam,school.exam,model_school_exam,,1,1,1,1
 access_school_result,school.result,model_school_result,,1,1,1,1
 access_school_fee,school.fee,model_school_fee,,1,1,1,1
+
+#test
