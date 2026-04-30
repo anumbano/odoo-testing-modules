@@ -6,14 +6,14 @@
         <field name="name">school.student.tree</field>
         <field name="model">school.student</field>
         <field name="arch" type="xml">
-            <tree string="Students">
+            <list string="Students">
                 <field name="name"/>
                 <field name="roll_number"/>
                 <field name="gender"/>
                 <field name="classroom_id"/>
                 <field name="parent_phone"/>
                 <field name="state"/>
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -66,13 +66,13 @@
         <field name="name">school.teacher.tree</field>
         <field name="model">school.teacher</field>
         <field name="arch" type="xml">
-            <tree string="Teachers">
+            <list string="Teachers">
                 <field name="name"/>
                 <field name="employee_id"/>
                 <field name="specialization"/>
                 <field name="phone"/>
                 <field name="state"/>
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -121,12 +121,12 @@
         <field name="name">school.classroom.tree</field>
         <field name="model">school.classroom</field>
         <field name="arch" type="xml">
-            <tree string="Classes">
+            <list string="Classes">
                 <field name="name"/>
                 <field name="section"/>
                 <field name="class_teacher_id"/>
                 <field name="total_students"/>
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -149,11 +149,11 @@
                     <notebook>
                         <page string="Students">
                             <field name="student_ids">
-                                <tree>
+                                <list>
                                     <field name="name"/>
                                     <field name="roll_number"/>
                                     <field name="gender"/>
-                                </tree>
+                                </list>
                             </field>
                         </page>
                     </notebook>
@@ -169,13 +169,13 @@
         <field name="name">school.fee.tree</field>
         <field name="model">school.fee</field>
         <field name="arch" type="xml">
-            <tree string="Fees">
+            <list string="Fees">
                 <field name="student_id"/>
                 <field name="fee_type"/>
                 <field name="amount"/>
                 <field name="due_date"/>
                 <field name="state"/>
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -220,25 +220,25 @@
     <record id="school_student_action" model="ir.actions.act_window">
         <field name="name">Students</field>
         <field name="res_model">school.student</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 
     <record id="school_teacher_action" model="ir.actions.act_window">
         <field name="name">Teachers</field>
         <field name="res_model">school.teacher</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 
     <record id="school_classroom_action" model="ir.actions.act_window">
         <field name="name">Classes</field>
         <field name="res_model">school.classroom</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 
     <record id="school_fee_action" model="ir.actions.act_window">
         <field name="name">Fees</field>
         <field name="res_model">school.fee</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 
 
